@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-image: url('./images/bg-header-mobile.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 7.5em;
+    margin-bottom: 2em;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+h2{
+    font-size: 2em;
+    margin-bottom: .5em;
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+}
+h3{
+    font-size: 1.75em;
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+    margin-bottom: .5em;
+}
+p{
+    font-size: 1.01em;
+    line-height: 1.5em;
+    color: hsl(201, 11%, 66%);
+    margin-bottom: 3.25em;
+}
+section{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 9.5em;
+}
+section:nth-child(2){
+    margin-bottom: 8em;
+}
+section:nth-child(3){
+    margin-bottom: 1em;
+}
+section:nth-child(4){
+    margin-bottom: 4em;
+}
+
+.button{
+    width: 100%;
+    border-radius: 2em;
+    font-family: inherit;
+    color: white;
+    border: 0;
+    padding: .85em;
+    font-size: 1.1em;
+    border-bottom:4px solid rgba(0, 0, 0, .2);
+    font-weight: 600;
+    letter-spacing: .02em;
+}
+.button-green{
+    margin-bottom: 1.25em;
+    background-color: hsl(171, 66%, 44%);
+}
+.button-blue{
+    background-color: hsl(233, 100%, 69%);
+}
+
+#tools-section .tool img{
+    margin: 2em;
+}
+#snippets-section img,
+#access-section img{
+    width: 100%;
+    margin-bottom: 3.2825em;
+}
+
+#brands-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+#brands-section img{
+    width: 100%;
+    margin: 2em 0;
+}
+
+footer{
+    background-color: hsl(201, 11%, 96%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+    text-align: center;
+    font-family: 'Bai Jamjuree',sans-serif;
+}
+footer img{
+    width: 18%;
+    margin-bottom: 2em;
+}
+footer ul{
+    list-style: none;
+}
+footer ul li{
+    color: hsl(210, 10%, 33%);
+    font-size: 1.1em;
+    margin-bottom: 1.25em;
+}
+#socials-list{
+    margin: 2em 0;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+
+
