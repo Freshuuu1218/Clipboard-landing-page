@@ -24,7 +24,7 @@ main{
     align-items: center;
     font-family: 'Bai Jamjuree', sans-serif;
 }
-h2{
+h2, h1{
     font-size: 2em;
     margin-bottom: .5em;
     color: hsl(210, 10%, 33%);
@@ -56,7 +56,6 @@ section:nth-child(3){
 section:nth-child(4){
     margin-bottom: 4em;
 }
-
 .button{
     width: 100%;
     border-radius: 2em;
@@ -76,7 +75,6 @@ section:nth-child(4){
 .button-blue{
     background-color: hsl(233, 100%, 69%);
 }
-
 #tools-section .tool img{
     margin: 2em;
 }
@@ -85,7 +83,6 @@ section:nth-child(4){
     width: 100%;
     margin-bottom: 3.2825em;
 }
-
 #brands-section{
     display: flex;
     flex-direction: column;
@@ -96,7 +93,6 @@ section:nth-child(4){
     width: 100%;
     margin: 2em 0;
 }
-
 footer{
     background-color: hsl(201, 11%, 96%);
     display: flex;
@@ -124,6 +120,187 @@ footer ul li{
     justify-content: space-between;
     width: 50%;
 }
-
+@media(min-width:768px){
+    header {
+        background-image: url('./images/bg-header-desktop.png');
+        padding-top: 5em;
+    }
+    header img{
+        width: 7.5%;
+    }
+    #download-section,
+    #ending-download-section{
+        width: 50%;
+    } 
+    h1{
+        font-size: 2.75em;
+    }
+    h2{
+        font-size: 2.25em;
+    }
+    h3{
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 1.25em;
+        margin-bottom: 2.5em;
+    }
+    section{
+        margin-bottom: 8em;
+    }
+   .button {
+        width: 32.5%;
+        padding: .9em;
+        font-size: 1.1em;
+    }
+    .button-green{
+        margin-right: .75em;
+    }
+    .section-heading {
+        margin: 0 auto;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 3em;
+    }
+     .section-heading h2{
+        font-size: 2.25em;
+    }
+    .section-heading p{
+        font-size: 1.1em;
+    }
+    #snippets-section .section-content{
+        display: flex;
+        width: 100%;
+    }
+    #snippets-section .section-content-img img{
+        transform: translateX(-4em) ;
+    }
+    #snippets-section .section-content-text{
+        padding-top: 3.5em;
+        padding-left: 2em;
+        width: 50%;
+        text-align: left;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    #snippets-section .section-content-text h3{
+        font-size: 1.5em;
+        margin-bottom: .5em;
+    }
+    #snippets-section .section-content-text p{
+        width: 55%;
+        margin-bottom: 3.2em;
+        font-size: 1em;
+        line-height: 1.85em;
+    }
+    #access-section img{
+        width: 65%;
+    }
+    #tools-section .section-content{
+        margin: 0 auto;
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+    }
+    .tool{
+        width: 32.5%;
+    }
+    .tool p{
+        font-size: 1em;
+        line-height: 2em;
+    }
+    #tools-section .tool img {
+        margin: 2em;
+    }
+    #tools-section .tool:nth-child(2) img{
+        margin-top: 2em;
+        margin-bottom: 2.5em;
+    }
+    #tools-section .tool:nth-child(3) img{
+        margin-top: 2em;
+        margin-bottom: 2.5em;
+    }
+    #brands-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 80%;
+        justify-content: space-between;
+    }
+    #brands-section img {
+        width: 12.5%;
+        margin:0 4em 0 0;
+    }
+    #ending-download-section p{
+        font-size: 1.1em;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        padding: 3em 0;
+    }
+    footer img {
+        width: 3.5em;
+        margin-bottom: 0;
+        margin: 0 10em;
+    }
+    footer #nav-list {
+        display: grid;
+        list-style: none;
+        grid-template-areas: 
+        "faqs pp ig"
+        "cu pk .";
+        text-align: left;
+        row-gap: 1em;
+        column-gap: 5em;
+        width: 50%;
+    }
+    footer #nav-list li {
+        margin-bottom: 0;
+    }
+    footer #nav-list li:nth-child(1){
+        grid-area: faqs;
+    }
+    footer #nav-list li:nth-child(2){
+        grid-area: cu;
+    }
+    footer #nav-list li:nth-child(3){
+        grid-area: pp;
+    }
+    footer #nav-list li:nth-child(4){
+        grid-area: pk;
+    }
+    footer #nav-list li:nth-child(5){
+        grid-area: ig;
+    }
+    #socials-list {
+        margin: 0 10em ;
+        display: flex;
+        justify-content: space-between;
+        width: 5em;
+    }
+    #socials-list img{
+        margin: 0 .5em;
+    }
+    .button-green:hover {
+        background-color: hsl(171, 66%, 59%);
+        cursor: pointer;
+    }
+    .button-blue:hover {
+        background-color: hsl(233, 100%, 79%);
+        cursor: pointer;
+    }
+    footer #nav-list li:hover{
+        color: hsl(171, 66%, 44%);
+        cursor: pointer;
+    }
+    #socials-list img:hover{
+        cursor: pointer;
+    }
+}
 
 
